@@ -1,0 +1,4 @@
+msgid "Check missing or invalid fields"
+msgstr "Verifica los campos que falten o inválidos"
+msgid "There was an error processing your payment, please try again"
+msgstr "Hubo un error procesando su pago, por favor, inténtelo de nuevo"
