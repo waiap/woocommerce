@@ -56,6 +56,7 @@ class WC_Waiap_Payment{
                           'method',
                           'request_id'
                       ),
+                      'permission_callback' => '__return_true',
                   )
               );
           }
@@ -72,6 +73,7 @@ class WC_Waiap_Payment{
                           return $pwall->getQuoteInfo($request);
                       },
                       'args' => array(),
+                      'permission_callback' => '__return_true',
                   )
               );
           }
@@ -90,6 +92,7 @@ class WC_Waiap_Payment{
                       'args' => array(
                         'checkout_data'
                       ),
+                      'permission_callback' => '__return_true',
                   )
               );
           }
@@ -104,7 +107,8 @@ class WC_Waiap_Payment{
                       'callback' => function ($request) {
                           $pwall = new WC_Waiap_Checkout();
                           return $pwall->getCheckoutInfo($request);
-                      }
+                      },
+                      'permission_callback' => '__return_true',
                   )
               );
           }
